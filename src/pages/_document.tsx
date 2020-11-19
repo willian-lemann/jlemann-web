@@ -11,11 +11,7 @@ class MyDocument extends Document {
       return (
          <Html lang='pt'>
             <title>Jlemann</title>
-            <Head>
-               <meta charSet="utf-8" />
-               <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-               <meta property="og:title" content="Jlemann" key="title" />
-            </Head>
+            <Head />
             <body>
                <Main />
                <NextScript />

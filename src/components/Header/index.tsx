@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                borderRadius={0}
                animationDuration={0.5}
             />
-            {/* <img src="/logo-jl.svg" alt="" width={100px} height={100} /> */}
+            {/* <img src="/logo-jl.svg" alt="" width='100px' height='100' /> */}
          </section>
 
          <nav

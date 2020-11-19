@@ -13,14 +13,14 @@ const Home: React.FC = () => {
       <Header />
 
       <section className='header-image-section'>
-        <Image src={logo} alt="logoBackground" width={400} height={400} />
+        <Image src={logo} alt="logoBackground" width='400' height='400' />
       </section>
 
       <section className='projects-section'>
         <h3>Projetos na planta</h3>
         <ul>
           <li>
-            <Image src={house} alt="carousel" width={'100%'} height={220} />
+            <Image src={house} alt="carousel" width="1280" height='700' />
             <p>Imovel1</p>
             <p>R$ 100,000,00</p>
           </li>
@@ -30,13 +30,13 @@ const Home: React.FC = () => {
 
       <section className="galery-carousel-section">
         <h3>Galeria de fotos</h3>
-        <Image src={house2} alt="galery carousel" width={'100%'} height={400} />
+        <Image src={house2} alt="galery carousel" width='100%' height='400' />
       </section>
 
       <section className="properties-section">
         <ul>
           <li>
-            <Image src={propertie} alt="properties" height={250} width={'100%'} />
+            <Image src={propertie} alt="properties" height='250' width='100%' />
             <strong>lorem lorem lorem lorem</strong>
             <p>Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Molestiae praesentium
