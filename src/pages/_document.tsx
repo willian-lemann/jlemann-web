@@ -10,11 +10,11 @@ class MyDocument extends Document {
    render() {
       return (
          <Html lang='pt'>
+            <title>Jlemann</title>
             <Head>
-               <title>Jlemann</title>
+               <meta charSet="utf-8" />
                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                <meta property="og:title" content="Jlemann" key="title" />
-
             </Head>
             <body>
                <Main />
