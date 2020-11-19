@@ -4,8 +4,7 @@ import logo from '../assets/logo-jl.svg';
 import house from '../assets/house.svg';
 import house2 from '../assets/house2.svg';
 import propertie from '../assets/propertie1.svg';
-import properties2 from '../assets/properties2.svg';
-import properties3 from '../assets/properties3.svg';
+
 
 const Home: React.FC = () => {
   return (
@@ -49,13 +48,13 @@ const Home: React.FC = () => {
 
       <section className="footer-section">
         <div className="location-container">
-           <div className="location-content">
-             rua 
+          <div className="location-content">
+            rua
            </div>
         </div>
 
         <div>
-          
+
         </div>
       </section>
 
