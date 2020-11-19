@@ -7,7 +7,6 @@ import styles from './index.module.scss';
 const Header: React.FC = () => {
    const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-   console.log(isOpenMenu)
    return (
       <header className={styles.headerContainer}>
          <section className={styles.logoSection}>
@@ -20,7 +19,7 @@ const Header: React.FC = () => {
                borderRadius={0}
                animationDuration={0.5}
             />
-            {/* <img src="/logo-jl.svg" alt="" /> */}
+            {/* <img src="/logo-jl.svg" alt="" width='100px' height='100' /> */}
          </section>
 
          <nav

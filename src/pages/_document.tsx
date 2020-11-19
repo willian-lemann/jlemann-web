@@ -10,12 +10,8 @@ class MyDocument extends Document {
    render() {
       return (
          <Html lang='pt'>
-            <Head>
-               <title>Jlemann</title>
-               <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-               <meta property="og:title" content="Jlemann" key="title" />
-
-            </Head>
+            <title>Jlemann</title>
+            <Head />
             <body>
                <Main />
                <NextScript />

@@ -11,15 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-      width: 100px;
-    }
   }
 
   .menu {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: -250px;
     background-color: $backgroundColor;
     height: 100vh;
@@ -57,7 +53,7 @@
   .menuActive {
     z-index: 2;
     position: absolute;
-    top: 0;
+    top: 0px;
     background-color: $backgroundColor;
     height: 100vh;
     width: 250px;
@@ -94,16 +90,19 @@
 
 @keyframes slideOut {
   0% {
-    left: 0%;
+    position: absolute;
+    left: 0px;
   }
 }
 
 @keyframes slideIn {
   0% {
-    left: -250%;
+    position: absolute;
+    left: -250px;
   }
- 
-  100%{
+
+  100% {
+    position: absolute;
     left: 0px;
   }
 }
