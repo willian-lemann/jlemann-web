@@ -1,0 +1,131 @@
+@import "reset.scss";
+@import "theme.scss";
+
+body,
+html {
+  background-color: $backgroundColor;
+}
+
+.home-container {
+  .header-image-section {
+    height: calc(100vh - 100px);
+    background-image: url("../../src/assets/header-background-image.svg");
+    background-size: cover;
+    background-position: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 400px;
+      opacity: 0.1;
+    }
+  }
+
+  .projects-section {
+    height: 689px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+      align-self: center;
+      margin-top: 60px;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: $primaryColor;
+    }
+
+    ul {
+      li {
+        background-color: $houseCard;
+        height: 300px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        p {
+          margin-top: 10px;
+          margin-left: 15px;
+          font-weight: bold;
+          font-family: sans-serif;
+
+          + p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    button {
+      background-color: $primaryColor;
+      font-size: 24px;
+      color: $backgroundColor;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      height: 50px;
+      width: 200px;
+      border-radius: 3px;
+      border: 0;
+      outline: 1px solid black;
+      align-self: center;
+    }
+  }
+
+  .galery-carousel-section {
+    width: 100%;
+    height: 689px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h3 {
+      align-self: center;
+    }
+    img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .properties-section {
+    background-color: $houseCard;
+    width: 100%;
+
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+          width: 100%;
+        }
+        strong {
+          font-family: sans-serif;
+          margin-top: 10px;
+        }
+        p {
+          margin-top: 30px;
+          font-family: sans-serif;
+        }
+        button {
+          margin-top: 10px;
+          height: 40px;
+          width: 100px;
+          color: #444;
+          font-size: 18px;
+          border: 1px solid #444;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .app {
+    background-color: red;
+  }
+}
