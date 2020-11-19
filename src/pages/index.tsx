@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       </section>
 
       <section className="galery-carousel-section">
-        <h3>Galeria de fotos</h3>
+        <h3>Galeria de FOTOS</h3>
         <img src={house2} alt="galery carousel" />
       </section>
 
