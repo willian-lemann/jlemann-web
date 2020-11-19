@@ -4,8 +4,7 @@ import logo from '../assets/logo-jl.svg';
 import house from '../assets/house.svg';
 import house2 from '../assets/house2.svg';
 import propertie from '../assets/propertie1.svg';
-import properties2 from '../assets/properties2.svg';
-import properties3 from '../assets/properties3.svg';
+ 
 
 const Home: React.FC = () => {
   return (
