@@ -7,8 +7,10 @@
   },
   "dependencies": {
     "@types/react-hamburger-menu": "^0.0.3",
+    "framer-motion": "^2.9.4",
     "next": "latest",
     "next-images": "^1.6.2",
+    "popmotion": "^9.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-hamburger-menu": "^1.2.1",
