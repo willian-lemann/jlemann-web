@@ -145,7 +145,6 @@ html {
 
         p {
           text-align: center;
-          font-weight: bold;
           font-family: sans-serif;
           margin-bottom: 40px;
         }
@@ -158,11 +157,16 @@ html {
       flex-direction: column;
 
       .links-container {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
+
         li {
           padding: 10px;
           list-style: none;
+          font-size: 18px;
+          font-family: $primaryFontFamily;
+          cursor: pointer;
         }
       }
 
@@ -194,6 +198,11 @@ html {
         }
       }
 
+      hr {
+        width: calc(100% - 30px);
+        align-self: center;
+      }
+
       .last-footer-container {
         height: 50%;
         display: flex;
@@ -201,12 +210,16 @@ html {
         justify-content: space-between;
 
         .social-media-container {
-          background-color: red;
           height: 100px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: $primaryFontFamily;
         }
 
         strong {

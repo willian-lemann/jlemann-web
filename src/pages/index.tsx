@@ -31,11 +31,7 @@ const Home: React.FC = () => {
         <button>Ver Todos</button>
       </section>
 
-      <section className="galery-carousel-section">
-        <h3>Galeria de fotos</h3>
-        {/* <Image src={house2} alt="galery carousel" width='100%' height='400' /> */}
-        <Carousel />
-      </section>
+      <Carousel />
 
       <section className="properties-section">
         <ul>
@@ -72,7 +68,7 @@ const Home: React.FC = () => {
         <div className='footer-container'>
           <ul className="links-container">
             <li>Home</li>
-            <li>Modelos de casas</li>
+            <li>Modelos</li>
             <li>Projetos</li>
             <li>Contatos</li>
           </ul>
@@ -89,9 +85,9 @@ const Home: React.FC = () => {
 
           <div className="last-footer-container">
             <div className="social-media-container">
-              <h3>Sigam a gente nas redes sociais</h3>
+              <p>Siga a gente nas redes sociais</p>
               <div className="social-media-content">
-                <FiInstagram />, <FiFacebook />
+                <FiInstagram size={38} />, <FiFacebook size={38} />
               </div>
             </div>
             <strong>© 2020, Made with ♥ by Willian Lemann</strong>
