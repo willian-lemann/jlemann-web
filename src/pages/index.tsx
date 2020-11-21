@@ -2,9 +2,11 @@ import Header from "../components/Header";
 
 import logo from '../assets/logo-jl.svg';
 import house from '../assets/house.svg';
-import house2 from '../assets/house2.svg';
+// import house2 from '../assets/house2.svg';
 import propertie from '../assets/propertie1.svg';
 import Carousel from '../components/Carousel';
+
+import { FiInstagram, FiFacebook } from 'react-icons/fi';
 
 import Image from 'next/image';
 
@@ -86,16 +88,13 @@ const Home: React.FC = () => {
           <hr />
 
           <div className="last-footer-container">
-            <div className="payments-container">
-              <h3>Master card</h3>
-            </div>
-
-            <div className='credits-container'>
-              <div className="social-media">
-                instagram, facebook
+            <div className="social-media-container">
+              <h3>Sigam a gente nas redes sociais</h3>
+              <div className="social-media-content">
+                <FiInstagram />, <FiFacebook />
               </div>
-              <strong>© 2020, Made with ♥ by Willian Lemann</strong>
             </div>
+            <strong>© 2020, Made with ♥ by Willian Lemann</strong>
           </div>
         </div>
       </section>

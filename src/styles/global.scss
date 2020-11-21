@@ -181,7 +181,6 @@ html {
           height: 40px;
           padding: 5px;
           font-size: 18px;
-          font-weight: bold;
           border: 1px solid;
         }
         button {
@@ -200,28 +199,19 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .payments-container {
+
+        .social-media-container {
+          background-color: red;
+          height: 100px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          h3 {
-            margin-top: 20px;
-          }
         }
 
-        .credits-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          height: 50%;
-
-          strong {
-            font-family: $buttonFontFamily;
-          }
-          .social-media {
-          }
+        strong {
+          align-self: center;
+          font-family: $primaryFontFamily;
         }
       }
     }
