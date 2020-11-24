@@ -1,45 +1,67 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Menu from 'react-hamburger-menu';
 import { FiX } from 'react-icons/fi';
+
+import logo from '../../assets/logo-jl.svg'
+import ResponsiveNavbar from '../ResponsiveNavbar';
+import Navbar from '../Navbar';
 import styles from './index.module.scss';
 
-const Header: React.FC = () => {
+const Header: React.FC = ({ children }) => {
    const [isOpenMenu, setIsOpenMenu] = useState(false);
+   const [responsive, setResponsive] = useState(false);
+
+   const GetWindowDimensions = () => {
+      const { innerHeight: height, innerWidth: width } = window;
+      return {
+         height,
+         width
+      }
+   };
+
+   useEffect(() => {
+      const dimensions = GetWindowDimensions();
+
+      const { width, height } = dimensions;
+
+      console.log(height, width)
+
+      if (height < 722 && width < 1536) {
+         setResponsive(true);
+      }
+
+   }, []);
 
    return (
-      <header className={styles.headerContainer}>
-         <section className={styles.logoSection}>
-            <Menu
-               isOpen={isOpenMenu}
-               menuClicked={() => setIsOpenMenu(!isOpenMenu)}
-               strokeWidth={3}
-               rotate={0}
-               color='black'
-               borderRadius={0}
-               animationDuration={0.5}
-            />
-            {/* <img src="/logo-jl.svg" alt="" width='100px' height='100' /> */}
-         </section>
+      <>
+         <header className={styles.headerContainer}>
+            <section className={styles.logoSection}>
+               {responsive ? (
 
-         <nav
-            className={isOpenMenu ? styles.menuActive : styles.menu}>
-            <div className={styles.menuIconCloseContainer}>
-               <FiX
-                  onClick={() => setIsOpenMenu(!isOpenMenu)}
-                  className={styles.menuIconClose}
-                  size={38}
-               />
-            </div>
+                  <Menu
+                     isOpen={isOpenMenu}
+                     menuClicked={() => setIsOpenMenu(!isOpenMenu)}
+                     strokeWidth={3}
+                     rotate={0}
+                     color='black'
+                     borderRadius={0}
+                     animationDuration={0.5}
+                  />
+               ) :
+                  <img src={logo} alt="" width='100px' height='100' />
+               }
+            </section>
 
-            <ul>
-               <li>Home</li>
-               <li>Projetos na planta</li>
-               <li>Modelos de imóveis</li>
-               <li>Contato</li>
-            </ul>
-         </nav>
-      </header>
+            {responsive
+               ?
+               <ResponsiveNavbar isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+               :
+               <Navbar />
+            }
+         </header>
+         {children}
+      </>
    );
 }
 

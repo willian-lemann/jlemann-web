@@ -1,0 +1,176 @@
+@import "../../styles/theme.scss";
+
+.projectsSection {
+  height: 689px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h3 {
+    align-self: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: $primaryColor;
+  }
+
+  ul {
+    li {
+      background-color: $houseCard;
+      height: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      img {
+        object-fit: cover;
+      }
+
+      .projectsContentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+
+        strong {
+          margin-left: 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-family: $primaryFontFamily;
+        }
+
+        .iconsContainer {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 10px;
+            font-family: $primaryFontFamily;
+          }
+        }
+
+        .icon {
+          margin-left: 10px;
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        margin-left: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+        + p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: $primaryColor;
+    font-size: 24px;
+    color: $backgroundColor;
+    text-transform: uppercase;
+    font-family: $buttonFontFamily;
+    height: 50px;
+    width: 200px;
+    border-radius: 3px;
+    border: 0;
+    outline: 1px solid black;
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projectsSection {
+    height: 689px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h3 {
+      align-self: center;
+      margin-top: 60px;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: $primaryColor;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 40px;
+
+      li {
+        grid-column: 1fr;
+        background-color: $houseCard;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+          object-fit: cover;
+        }
+
+        .projectsContentContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 400px;
+
+          strong {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: $primaryFontFamily;
+          }
+
+          .iconsContainer {
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 10px;
+              font-family: $primaryFontFamily;
+            }
+          }
+
+          .icon {
+            margin-left: 10px;
+          }
+        }
+
+        p {
+          margin-top: 10px;
+          margin-left: 15px;
+          font-weight: bold;
+          font-family: sans-serif;
+
+          + p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    button {
+      background-color: $primaryColor;
+      font-size: 24px;
+      color: $backgroundColor;
+      text-transform: uppercase;
+      font-family: $buttonFontFamily;
+      height: 50px;
+      width: 200px;
+      border-radius: 3px;
+      border: 0;
+      outline: 1px solid black;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
+}

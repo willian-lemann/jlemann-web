@@ -12,103 +12,22 @@
     align-items: center;
     justify-content: center;
   }
-
-  .menu {
-    position: absolute;
-    top: 0px;
-    left: -250px;
-    background-color: $backgroundColor;
-    height: 100vh;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    animation: slideOut 0.5 ease;
-    -webkit-animation: slideOut 0.5s ease;
-
-    .menuIconCloseContainer {
-      background-color: $backgroundColor;
-      height: 100px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    .menuIconClose {
-      margin-left: 20px;
-    }
-
-    li {
-      margin-bottom: 20px;
-      list-style: none;
-      width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: sans-serif;
-      cursor: pointer;
-    }
-  }
-
-  .menuActive {
-    z-index: 2;
-    position: absolute;
-    top: 0px;
-    background-color: $backgroundColor;
-    height: 100vh;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    animation: slideIn 0.5s ease;
-    -webkit-animation: slideIn 0.5s ease;
-
-    .menuIconCloseContainer {
-      background-color: $backgroundColor;
-      height: 100px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    .menuIconClose {
-      margin-left: 20px;
-    }
-
-    li {
-      margin-bottom: 20px;
-      list-style: none;
-      width: 100%;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      font-family: sans-serif;
-      cursor: pointer;
-    }
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    position: absolute;
-    left: 0px;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    position: absolute;
-    left: -250px;
-  }
-
-  100% {
-    position: absolute;
-    left: 0px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .app {
-    background-color: red;
+  .headerContainer {
+    height: 100px;
+    width: 100%;
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: space-between;
+
+    .logoSection {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
