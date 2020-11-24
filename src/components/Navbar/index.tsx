@@ -1,5 +1,4 @@
-import React, { Dispatch, SetStateAction } from 'react';
-import { FiX } from 'react-icons/fi';
+import React from 'react';
 
 import styles from './index.module.scss';
 

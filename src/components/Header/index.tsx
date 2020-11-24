@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import Menu from 'react-hamburger-menu';
-import { FiX } from 'react-icons/fi';
 
 import logo from '../../assets/logo-jl.svg'
 import ResponsiveNavbar from '../ResponsiveNavbar';
