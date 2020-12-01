@@ -26,7 +26,7 @@ const Header: React.FC = ({ children }) => {
 
       console.log(height, width)
 
-      if (height < 722 && width < 1536) {
+      if (height < 769 && width < 1536) {
          setResponsive(true);
       }
 
@@ -36,6 +36,7 @@ const Header: React.FC = ({ children }) => {
       <>
          <header className={styles.headerContainer}>
             <section className={styles.logoSection}>
+               {console.log(responsive)}
                {responsive ? (
 
                   <Menu

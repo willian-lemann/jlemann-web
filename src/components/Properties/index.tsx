@@ -10,30 +10,30 @@ const Properties: React.FC = () => {
       <section className={styles.propertiesSection}>
          <ul>
             <li>
-               <Image src={propertie} alt="properties" height='250' width='100%' />
+               <img src={propertie} alt="properties" />
                <strong>lorem lorem lorem lorem</strong>
                <p>Lorem ipsum dolor sit amet consectetur,
                adipisicing elit. Molestiae praesentium
                ratione beatae animi delectus quidem earum,
-       voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
+                   voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
                <button>Ler mais</button>
             </li>
             <li>
-               <Image src={propertie} alt="properties" height='250' width='100%' />
+               <img src={propertie} alt="properties" />
                <strong>lorem lorem lorem lorem</strong>
                <p>Lorem ipsum dolor sit amet consectetur,
                adipisicing elit. Molestiae praesentium
                ratione beatae animi delectus quidem earum,
-       voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
+                   voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
                <button>Ler mais</button>
             </li>
             <li>
-               <Image src={propertie} alt="properties" height='250' width='100%' />
+               <img src={propertie} alt="properties" />
                <strong>lorem lorem lorem lorem</strong>
                <p>Lorem ipsum dolor sit amet consectetur,
                adipisicing elit. Molestiae praesentium
                ratione beatae animi delectus quidem earum,
-       voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
+                   voluptatibus explicabo vitae, omnis hic, doloribus i !</p>
                <button>Ler mais</button>
             </li>
          </ul>

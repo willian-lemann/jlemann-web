@@ -9,6 +9,8 @@ interface ResponsiveNavbarProps {
 }
 
 const ResponsiveNavbar: React.FC<ResponsiveNavbarProps> = ({ isOpenMenu, setIsOpenMenu }) => {
+
+
    return (
       <nav
          className={isOpenMenu ? styles.menuActive : styles.menu}>
