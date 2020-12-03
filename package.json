@@ -15,8 +15,6 @@
     "framer-motion": "^2.9.4",
     "next": "latest",
     "next-images": "^1.6.2",
-    "pg": "^8.5.1",
-    "pg-connection-string": "^2.4.0",
     "popmotion": "^9.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

@@ -103,12 +103,28 @@
       flex-direction: column;
       justify-content: space-between;
 
+      .lastFooterTop {
+        display: flex;
+        flex-direction: column-reverse;
+        ul {
+          li {
+            text-decoration: underline;
+            font-size: 18px;
+            color: #000;
+          }
+        }
+      }
+
       .socialMediaContainer {
         height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        p {
+          font-size: 18px;
+          font-family: $primaryFontFamily;
+        }
       }
 
       ul {
@@ -121,11 +137,6 @@
             color: #000;
           }
         }
-      }
-
-      p {
-        font-size: 18px;
-        font-family: $primaryFontFamily;
       }
 
       strong {
@@ -262,7 +273,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        .lastFooterTop { 
+        .lastFooterTop {
           display: flex;
           justify-content: space-around;
           .socialMediaContainer {

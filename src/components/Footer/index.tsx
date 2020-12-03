@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
                      <li>
                         <Link href='/privacy'>
                            Nossa politica de privacidade
-                     </Link>
+                        </Link>
                      </li>
                   </ul>
 
