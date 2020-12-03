@@ -67,16 +67,6 @@ const Footer: React.FC = () => {
                   <li>Contatos</li>
                </ul>
 
-               <div className={styles.termsContainer}>
-                  <ul>
-                     <li>
-                        <Link href='/privacy'>
-                           Politica de privacidade
-                        </Link>
-                     </li>
-                  </ul>
-               </div>
-
                <div className={styles.newsletterContainer}>
                   <p>Fique por dentro das novidades</p>
                   <div className={styles.wrapper}>
@@ -95,12 +85,23 @@ const Footer: React.FC = () => {
             <hr />
 
             <div className={styles.lastFooterContainer}>
-               <div className={styles.socialMediaContainer}>
-                  <p>Siga a gente nas redes sociais</p>
-                  <div className={styles.socialMediaContent}>
-                     <FiInstagram size={38} /> <FiFacebook size={38} />
+               <div className={styles.lastFooterTop}>
+                  <ul>
+                     <li>
+                        <Link href='/privacy'>
+                           Nossa politica de privacidade
+                     </Link>
+                     </li>
+                  </ul>
+
+                  <div className={styles.socialMediaContainer}>
+                     <p>Siga a gente nas redes sociais</p>
+                     <div>
+                        <FiInstagram size={38} /> <FiFacebook size={38} />
+                     </div>
                   </div>
                </div>
+
                <strong>© 2020, Made with ♥ by Willian Lemann</strong>
             </div>
          </div>
