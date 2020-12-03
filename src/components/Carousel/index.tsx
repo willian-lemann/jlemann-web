@@ -1,6 +1,6 @@
 import React, { WheelEvent } from 'react';
 
-import { images } from '../../api/image.data';
+import { images } from '../../data/image.data';
 
 import styles from './index.module.scss';
 

@@ -1,0 +1,63 @@
+@import "../../styles/theme.scss";
+
+.privacyContainer {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+
+    section {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      margin-left: 10px;
+      font-size: 18px;
+      font-family: $primaryFontFamily;
+    }
+
+    a {
+      background-color: #f2f2f2;
+      height: 40px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $primaryColor;
+      font-size: 18px;
+      border-radius: 3px;
+      transition: background 0.3s, color 0.3s;
+
+      &:hover {
+        background: #b9b9b9;
+        color: #f2f2f2;
+      }
+    }
+  }
+  main {
+    height: 100%;
+    width: 50%;
+
+    h1 {
+      font-size: 50px;
+      font-family: $primaryFontFamily;
+    }
+
+    p {
+      margin-top: 40px;
+      text-align: justify;
+      line-height: 30px;
+      font-family: $primaryFontFamily;
+      font-size: 18px;
+    }
+  }
+}
