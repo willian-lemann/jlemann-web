@@ -36,9 +36,7 @@ const Header: React.FC = ({ children }) => {
       <>
          <header className={styles.headerContainer}>
             <section className={styles.logoSection}>
-               {console.log(responsive)}
                {responsive ? (
-
                   <Menu
                      isOpen={isOpenMenu}
                      menuClicked={() => setIsOpenMenu(!isOpenMenu)}

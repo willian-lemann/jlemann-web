@@ -1,0 +1,13 @@
+@import "../styles/theme.scss";
+
+.notFoundContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h1 {
+    font-family: $primaryFontFamily;
+  }
+}

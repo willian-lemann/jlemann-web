@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "name": "Property",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "plant": {
+      "type": "boolean"
+    }
+  }
+}

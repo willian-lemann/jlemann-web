@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "news_letters",
   "info": {
-    "name": "NewsLetter",
-    "description": ""
+    "name": "NewsLetter"
   },
   "options": {
     "increments": true,
